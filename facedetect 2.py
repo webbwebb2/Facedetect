@@ -19,7 +19,7 @@ from common import clock, draw_str
 
 
 def detect(img, cascade):
-    rects = cascade.detectMultiScale(img, scaleFactor=1.3, minNeighbors=4, maxSize=(200, 200),
+    rects = cascade.detectMultiScale(img, scaleFactor=1.3, minNeighbors=4, maxSize=(250, 250),
                                      flags=cv2.CASCADE_SCALE_IMAGE)
     if len(rects) == 0:
         return []
